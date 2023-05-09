@@ -1,0 +1,9 @@
+#Loading ggplot2, cowplot, and randomForest packages   
+library(ggplot2)  
+library(cowplot)  
+library(randomForest)  
+#Fetching heart-disease dataset  
+url<-"http://archive.ics.uci.edu/ml/machine-learning-databases/heart-disease/processed.cleveland.data"  
+data <- read.csv(url,header=FALSE)  
+#Head print six rows of data.  
+head(data)  
