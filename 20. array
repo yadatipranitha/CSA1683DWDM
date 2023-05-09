@@ -1,0 +1,11 @@
+row_names <- c("row1", "row2")
+col_names <- c("col1", "col2", "col3")
+mat_names <- c("Mat1", "Mat2")
+
+# the naming of the various elements
+# is specified in a list and
+# fed to the function
+arr = array(2:14, dim = c(2, 3, 2),
+            dimnames = list(row_names,
+                            col_names, mat_names))
+print (arr)
