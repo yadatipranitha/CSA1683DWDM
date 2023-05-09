@@ -1,0 +1,8 @@
+num1=as.integer(readline(prompt = "Enter the number 1:")) 
+Enter the number 1:4
+ num2 =as.integer(readline(prompt = "Enter a number2:")) 
+Enter a number2:3
+div=num1/num2 
+print((paste("Division:",div)))
+[1] "Division: 1.33333333333333"
+
