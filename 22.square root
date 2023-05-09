@@ -1,0 +1,8 @@
+ x1 <- 8.34526
+> x2 <- -18
+>   sqrt(x1)
+[1] 2.888816
+> sqrt(x2)
+[1] NaN
+Warning message:
+In sqrt(x2) : NaNs produced
