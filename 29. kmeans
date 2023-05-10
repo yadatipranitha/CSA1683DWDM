@@ -1,0 +1,15 @@
+# Load the dataset
+data(iris)
+
+# Select the variables to use for clustering
+vars <- c("Sepal.Length", "Sepal.Width", "Petal.Length", "Petal.Width")
+x <- iris[, vars]
+
+# Perform k-means clustering with 3 clusters
+set.seed(123)
+k <- 3
+km <- kmeans(x, k)
+
+# Print the results
+km$centers  # Cluster centers
+km$cluster  # Cluster assignments
