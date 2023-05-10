@@ -1,0 +1,6 @@
+library(rpart)
+data(iris)
+model <- rpart(Species ~ ., data = iris, method = "class")
+plot(model)
+newdata <- data.frame(Sepal.Length = 5.1, Sepal.Width = 3.5, Petal.Length = 1.4, Petal.Width = 0.2)
+predict(model, newdata, type = "class")
